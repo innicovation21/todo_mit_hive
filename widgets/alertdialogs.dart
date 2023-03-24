@@ -37,12 +37,12 @@ class AddTaskDialog extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                // save button
+                // speichern
                 MyButton(text: "speichern", onPressed: onSave),
 
                 const SizedBox(width: 8),
 
-                // cancel button
+                // abbrechen
                 MyButton(text: "abbrechen", onPressed: onCancel),
               ],
             ),
