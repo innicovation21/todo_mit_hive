@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import 'add_button.dart';
+import 'buttons.dart';
 
 class AddTaskDialog extends StatelessWidget {
   final controller;
