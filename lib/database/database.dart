@@ -11,8 +11,7 @@ class ToDoDataBase {
   void createInitialData() {
     // befüllen der Liste mit ein paar default-aufgaben (welche ebenfalls in Form von Listen dargestellt werden)
     toDoListe = [
-      ["Wäsche waschen", false],
-      ["Einkaufszettel schreiben", false],
+      ["Eine Aufgabe hinzufügen ;)", false],
     ];
   }
 
