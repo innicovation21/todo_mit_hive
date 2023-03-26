@@ -1,4 +1,4 @@
-## todo_mit_hive
+## ToDo-App mit lokaler Datenbank
 
 ### Packages die in diesem Projekt genutzt werden:
 
