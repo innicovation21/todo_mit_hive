@@ -4,32 +4,34 @@ description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
+
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.0 <3.0.0'
+  sdk: '>=2.18.2 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_slidable: ^1.2.0
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
 
 
   cupertino_icons: ^1.0.2
+  sizer: ^2.0.15 # Sizer
+  flutter_slidable: ^1.2.0 # Slidable
+  hive: ^2.2.3 # Hive
+  hive_flutter: ^1.1.0 # Hive
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  hive_generator: ^1.1.3
-  build_runner: ^2.1.11
 
 
   flutter_lints: ^2.0.0
+  hive_generator: ^1.1.3 # Hive
+  build_runner: ^2.1.11 # Hive
 
 flutter:
 
-  uses-material-design: true
 
+  uses-material-design: true
 
