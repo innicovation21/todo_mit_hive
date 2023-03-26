@@ -1,6 +1,8 @@
+// ignore_for_file: prefer_const_constructors, must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-
+import 'package:sizer/sizer.dart';
 
 // Hier erstellen wir unser Widget, welches als Vorlage zur Darstellung der Aufgaben dienen soll
 
@@ -21,7 +23,7 @@ class ToDoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25.0, right: 25, top: 25),
+      padding: EdgeInsets.only(left: 5.w, right: 5.w, top: 3.h),
       child: Slidable(
         endActionPane: ActionPane(
           motion: StretchMotion(),
