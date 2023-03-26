@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   // controller für unser TextField
   final _controller = TextEditingController();
 
-  // checkbox was tapped
+  // Funktion für check / uncheck des checkbox widgets
   void checkBoxChanged(bool? value, int index) {
     setState(() {
       db.toDoList[index][1] = !db.toDoList[index][1];
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
     db.updateDataBase();
   }
 
-  // save new task
+  // funktion zum updaten/speichern einer neuen Aufgabe
   void saveNewTask() {
     setState(() {
       db.toDoList.add([_controller.text, false]);
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
     db.updateDataBase();
   }
 
-  // create a new task
+  // Funktion zum Erstellen einer neuen Aufgabe
   void createNewTask() {
     showDialog(
       context: context,
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // delete task
+  // Funktion zum Löschen einer Aufgabe
   void deleteTask(int index) {
     setState(() {
       db.toDoList.removeAt(index);
@@ -81,6 +81,7 @@ class _HomePageState extends State<HomePage> {
         title: Text('TO DO'),
         elevation: 0,
       ),
+      // Button für neue Aufgaben
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
         child: Icon(Icons.add),
