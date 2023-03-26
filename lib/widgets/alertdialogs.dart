@@ -1,14 +1,15 @@
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-
-import 'buttons.dart';
+import 'package:todomithive/widgets/buttons.dart';
 
 class AddTaskDialog extends StatelessWidget {
   final controller;
   VoidCallback onSave;
   VoidCallback onCancel;
 
-  DialogBox({
+  AddTaskDialog({
     super.key,
     required this.controller,
     required this.onSave,
@@ -38,12 +39,12 @@ class AddTaskDialog extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 // speichern
-                MyButton(text: "speichern", onPressed: onSave),
+                AlertDialogButton(text: "speichern", onPressed: onSave),
 
                 const SizedBox(width: 8),
 
                 // abbrechen
-                MyButton(text: "abbrechen", onPressed: onCancel),
+                AlertDialogButton(text: "abbrechen", onPressed: onCancel),
               ],
             ),
           ],
