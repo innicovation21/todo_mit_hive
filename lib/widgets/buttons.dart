@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AddButton extends StatelessWidget {
+class AlertDialogButton extends StatelessWidget {
   final String text;
   VoidCallback onPressed;
   
