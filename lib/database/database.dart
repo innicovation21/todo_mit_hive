@@ -1,12 +1,11 @@
 import 'package:hive_flutter/hive_flutter.dart';
 
-
 // Klasse für unsere Datenbank mit entsprechenden Variablen & Funktionen
 class ToDoDataBase {
   List toDoListe = [];
 
   // wir referenzieren unsere box
-  final _toDoBox = Hive.box('mybox');
+  final _toDoBox = Hive.box('toDoBox');
 
   // Erstellen einer Liste (wenn app das erste mal gestartet wird)
   void createInitialData() {
