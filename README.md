@@ -7,7 +7,7 @@
 [Sizer](https://pub.dev/packages/sizer)
 
 
-## Aufgabe:
+## Übungsaufgabe:
 
 - Hinzufügen eines NavigationDrawers (Custom Drawer)
 - Erstellen einer zweiten Box für Filme, die man noch sehen will
